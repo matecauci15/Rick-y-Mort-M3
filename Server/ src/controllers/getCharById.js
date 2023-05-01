@@ -23,7 +23,7 @@ const getCharById = async (req, res) => {
             return error.message.includes('ID')
             ? res.status(404).send(error.message)
             : res.status(500).send(error.response.data.error)
-    }
+    };
 }
 
 module.exports = {
